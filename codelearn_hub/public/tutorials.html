@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tutorials | CodeLearn Hub</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header>
+    <h1>CodeLearn Hub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tutorials.html">Tutorials</a>
+      <a href="profile.html">My Profile</a>
+    </nav>
+  </header>
+
+  <main>
+    
+    <section class="filters">
+      <input type="text" placeholder="Search tutorials..." />
+      <select id="difficultyFilter">
+        <option value="all">All Levels</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+      </select>
+    </section>
+
+    <section class="card-grid">
+        <div class="card" data-id="js-loops" data-difficulty="beginner">
+          <h3>JavaScript Loops</h3>
+          <p>Learn how to use for, while, and do...while loops in JavaScript.</p>
+          <div class="card-actions">
+            <button class="complete-btn">✅ Mark as Complete</button>
+            <button class="bookmark-btn">🔖 Bookmark</button>
+          </div>
+        </div>
+      
+        <div class="card" data-id="css-animations" data-difficulty="intermediate">
+          <h3>CSS Animations</h3>
+          <p>Create smooth animations using keyframes, transitions, and hover effects.</p>
+          <div class="card-actions">
+            <button class="complete-btn">✅ Mark as Complete</button>
+            <button class="bookmark-btn">🔖 Bookmark</button>
+          </div>
+        </div>
+      
+        <div class="card" data-id="form-validation" data-difficulty="beginner">
+          <h3>Form Validation</h3>
+          <p>Ensure users fill out forms correctly using JavaScript validation rules.</p>
+          <div class="card-actions">
+            <button class="complete-btn">✅ Mark as Complete</button>
+            <button class="bookmark-btn">🔖 Bookmark</button>
+          </div>
+        </div>
+      </section>
+      
+      <section class="code-editor">
+        <h2>Try it Yourself</h2>
+        <textarea id="editor" rows="8" placeholder="Type JavaScript code here..."></textarea>
+        <button onclick="runCode()">Run</button>
+        <pre id="output"></pre>
+      </section>
+      
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CodeLearn Hub</p>
+  </footer>
+</body>
+</html>

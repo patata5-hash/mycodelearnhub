@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeLearn Hub</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/themes.css">
+</head>
+<body>
+  
+  <div id="loader" class="loader"></div>
+
+  <header>
+    <h1>CodeLearn Hub</h1>
+    <nav id="nav">
+      <button id="burger">&#9776;</button>
+      <div id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="profile.html">My Profile</a>
+      </div>
+    </nav>
+    
+
+    <button id="themeToggle" aria-label="Toggle dark or light theme">🌙 Toggle Theme</button>
+
+  </header>
+
+  <main>
+  
+    <section class="hero">
+      <h2>Master Programming One Tutorial at a Time</h2>
+      <p>Interactive lessons, hands-on code, and personalized progress.</p>
+    </section>
+
+    <section class="featured">
+      <h2>Featured Tutorials</h2>
+      <div class="card-grid">
+        <div class="card">JavaScript Basics</div>
+        <div class="card">CSS Flexbox & Grid</div>
+        <div class="card">DOM Manipulation</div>
+      </div>
+    </section>
+   
+    <section class="signup">
+      <h2>Join CodeLearn Hub</h2>
+      <form id="signupForm">
+        <input type="text" id="username" name="username" placeholder="Username" required />
+        <input type="email" id="email" name="email" placeholder="Email Address" required />
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+    
+    <section class="code-api">
+  <h2>Try Code Online</h2>
+  <iframe height="400px" width="100%" src="https://replit.com/@chanpatricia079/hello-worldjs?v=1" frameborder="no" allowfullscreen></iframe>
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CodeLearn Hub</p>
+  </footer>
+
+  <script src="scripts/app.js"></script>
+</body>
